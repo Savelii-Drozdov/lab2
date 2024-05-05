@@ -9,7 +9,7 @@
   </head>
   <body class="pozition">
     <main>
-      <form class="feedback-form form" method="post" action="https://httpbin.org/post">
+      <form class="feedback-form form" enctype="multipart/form-data" method="post" action="https://httpbin.org/post">
 
         <label for="name" class="form__label">ФИО:</label>
         <input type="text" id="name" name="name" class="form__input" placeholder="Имя" required>
@@ -73,7 +73,7 @@
 
         <label for="attachment" class="form__label">Вложения (файл):</label>
         <input
-          type="file"
+          type ="file"
           id="attachment"
           name="attachment"
           class="form__input"
